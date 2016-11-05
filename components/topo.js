@@ -64,15 +64,9 @@ AFRAME.registerComponent('topo', {
                   });
         }
 
-            //console.log(path)
 
-        //for (const path of paths) {
-
-
-                  
-
-        //}
-
+        el.object3D.rotation.z = Math.PI
+        el.object3D.rotation.y = Math.PI
 
         el.emit('topo-generated');
     }
