@@ -1,0 +1,35 @@
+{
+  "name": "country-select",
+  "version": "0.1.0",
+  "description": "QPortal - Quorum Portal",
+  "private": true,
+  "scripts": {
+    "build": "browserify index.js -o build.js",
+    "dev": "budo index.js:build.js --port 8005 --live --open -t babelify",
+    "preghpages": "npm run build",
+    "ghpages": "npm run preghpages && ghpages -p gh-pages"
+  },
+  "author": "Matthias Treitler <matthias.treitler@gmail.com>",
+  "dependencies": {
+    "aframe-animation-component": "^0.3.2",
+    "aframe-extrude-and-lathe": "git+https://github.com/JosePedroDias/aframe-extrude-and-lathe.git",
+    "babel-polyfill": "^6.16.0",
+    "browserify": "^13.0.1",
+    "budo": "^9.2.1",
+    "d3": "^4.1.1",
+    "d3-geo": "^1.3.1",
+    "d3-geo-projection": "^1.1.1",
+    "randomcolor": "^0.4.4",
+    "superagent": "^1.8.3",
+    "superagent-promise-plugin": "^3.2.0",
+    "svg-mesh-3d": "^1.1.0",
+    "three-simplicial-complex": "^69.0.6",
+    "topojson-client": "^2.1.0",
+    "urlgray": "^0.2.3",
+    "world-atlas": "^1.0.0"
+  },
+  "devDependencies": {
+    "babelify": "^7.3.0",
+    "ghpages": "0.0.8"
+  }
+}
