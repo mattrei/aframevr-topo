@@ -4,8 +4,6 @@ var d3 = require('d3');
 var d3GeoProjection = require('d3-geo-projection');
 const randomColor = require('randomcolor')
 var topojson = require('topojson-client')
-var svgMesh3d = require('svg-mesh-3d')
-const createGeom = require('three-simplicial-complex')(AFRAME.THREE)
 
 var d3threeD = require('./d3-threeD')
 
